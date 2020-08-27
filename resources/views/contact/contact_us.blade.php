@@ -2,7 +2,7 @@
 @section('content')
     <head>
     </head>
-    <div class="text">
-       contact
+    <div class="homepage text">
+        contact
     </div>
 @endsection

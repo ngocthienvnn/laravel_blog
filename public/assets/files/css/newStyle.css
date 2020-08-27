@@ -4,8 +4,9 @@ body{
     width: 100%;
 }
 .text{
-    color: white;
-    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    /*text-align: center;*/
 }
 .text-header-pad{
     padding-top: 15px;
@@ -17,7 +18,7 @@ body{
     display: none;
 }
 .text-header-left{
-    color: white;
+    color: #ffffff;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -31,7 +32,7 @@ body{
     list-style-type: none;
 }
 .col-right-header{
-    position: fixed;
+    position: relative;
     width: 100%;
     display: block;
     z-index: 999999;
@@ -45,4 +46,43 @@ body{
     border-radius: 4px;
     padding: 2px 5px 2px 5px;
 }
+/* footer*/
+.footer-background{
+    background-color: #18181d;
+    padding: 40px 40px 40px 40px;
+}
+.text-title{
+    margin-bottom: 16px;
+    font-size: 12px;
+    /*font-weight: 600;*/
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.input-group-text{
+    background-color: red !important;
+    border-radius: 0px 32px 32px 0px !important;
+    color: white !important;
+    font-size: 12px;
+}
+.form-control{
+    border-radius: 32px 0px 0px 32px !important;
+}
+.footer-icon{
+    display: flex;
+    justify-content: flex-end;
+}
+.input-group-append:hover{
+    background-color: #18181d !important;
+}
+.text-footer{
+    margin: 1rem;
+}
+/* home*/
+.homepage{
+    position: relative;
+    font-size: 200px;
+}
+
 

@@ -2,8 +2,8 @@
 @section('content')
     <head>
     </head>
-    <div class="text">
-       about
+    <div class="homepage text">
+        about
     </div>
 @endsection
 

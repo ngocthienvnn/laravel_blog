@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://kit.fontawesome.com/bb7899a11f.js" crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="..\assets\files\js\layout\index.js"></script>
 </head>
 <body>
 <div class="col-right-header">
@@ -47,10 +47,49 @@
     {{--        @include('includes.header')--}}
     {{--    </header>--}}
     <div id="main" class="row">
-        @yield('content')
-    </div>
-    {{--    <footer class="row">--}}
-    {{--        @include('includes.footer')--}}
-    {{--    </footer>--}}
+        @yield('content')</div>
+
 </div>
 </body>
+
+<div class="row footer-background">
+    <div class="col-lg-4">
+        <div class="col-lg-12 text-title">Tags</div>
+        <div class="col-lg-12 text">Education</div>
+        <div class="col-lg-12 text">Inspiration</div>
+        <div class="col-lg-12 text">Lifestyle</div>
+        <div class="col-lg-12 text">Nature</div>
+        <div class="col-lg-12 text">Travel</div>
+        <div class="col-lg-12 text">Work</div>
+    </div>
+    <div class="col-lg-4">
+        <div class="col-lg-12 text-title">Navigation</div>
+        <div class="col-lg-12 text">Home</div>
+        <div class="col-lg-12 text">About</div>
+        <div class="col-lg-12 text">Contact</div>
+        <div class="col-lg-12 text">Element</div>
+        <div class="col-lg-12 text">Authors</div>
+        <div class="col-lg-12 text">Tags</div>
+    </div>
+    <div class="col-lg-4">
+        <div class="col-lg-12 text-title">SUBSCRIBE</div>
+        <div class="input-group mb-12">
+            <input type="text" class="form-control" placeholder="Your email address" aria-label="Your email address" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">SUBSCRIBE</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12 text-footer">
+        <div class="row">
+            <div class="col-lg-6 text">© 2020 Penang – Published with Ghost & Penang</div>
+            <div class="col-lg-6 footer-icon">
+                <div class="col-lg-1 text"><i class="fab fa-facebook-f"></i></div>
+                <div class="col-lg-1 text"><i class="fab fa-instagram"></i></div>
+                <div class="col-lg-1 text"><i class="fab fa-twitter"></i></div>
+                <div class="col-lg-1 text"><i class="fas fa-wifi"></i></div>
+            </div>
+        </div>
+
+    </div>
+</div>
