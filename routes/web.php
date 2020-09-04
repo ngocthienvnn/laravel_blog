@@ -12,14 +12,19 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 Route::get('/', function () {
     return view('homePage.homePage');
 });
-Route::get('/about', function () {
-    return view('about.about_us');
-});
+//Route::get('/about', function () {
+//    return view('about.about_us');
+//});
+//
+//Route::get('/contact', function () {
+//    return view('contact.contact_us');
+//});
+Route::get('admin/category/post','Admin\PostController@Post');
+Route::get('admin/category/test','Admin\CategoryController@test');
 
-Route::get('/contact', function () {
-    return view('contact.contact_us');
-});
