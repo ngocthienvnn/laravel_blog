@@ -12,19 +12,7 @@ class CategoryController extends Controller
 
     public function getCategory(Request $request)
     {
-//        $title = "xin chao #$@$#@ ...././ moi nguoi"; // xin-chao-moi-nguoi
-        //cut string
-//        $slug = \Str::slug($titallle, '-');
-//        dd($slug);
-//        $post=Category::customGetRecord();
         $post = Category::all()->toArray();
-        //$name=collect([$post]);
-//        dd($post);
-//        foreach ($post as $item) {
-////           $k = $item['title'];
-//           $slug[$item['id']] = \Str::slug($item['title'],'-');
-//            //           dd($item);
-//        }
         return $post;
 //       dd($post);
 
@@ -44,6 +32,7 @@ class CategoryController extends Controller
       Category::create(
           ['title' => $request->input('title'), 'description' => $request->input('discription'), 'slug' => $slug]
       );
-      dd('done');
+     return 'done';
     }
+
 }

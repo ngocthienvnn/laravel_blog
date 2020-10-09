@@ -8,7 +8,7 @@ $(function () {
             url:'admin/category/category',
             data:{title:title,discription:discription, _token: window.laravel_csrf_token},
         }).then( function (res) {
-            return res;
+            alert(res);
         }).catch(function (res) {
             console.log(res.responseJSON.message)
         })
@@ -20,7 +20,10 @@ $(function () {
         }).then(function (res) {
             console.log(res)
             for (var i = 0 ;i<res.length ; i++){
-                   $('#title').append('<div class="col-lg-12 text b-d-category"><div class="title-category" id="id_title ">'+res[i].title+'</div><div id="id_des">'+res[i].description+'<div></div>');
+                if (res[i].active ==1 ){
+                    $('#title').append('<div class="col-lg-12 text b-d-category"><div class="title-category" id="id_title ">'+res[i].title+'</div><div id="id_des">'+res[i].description+'<div></div>');
+
+                }
                    // $('#id_des').append(res[i].description);
 
             }

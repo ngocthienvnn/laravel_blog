@@ -3,7 +3,7 @@
 namespace App\Models;
 use GuzzleHttp\Psr7\Request;
 use Illuminate\Database\Eloquent\Model;
-
+use App\Models\Post;
 class Category extends Model{
     protected $table = 'categories';
     protected  $fillable = [
@@ -23,6 +23,10 @@ class Category extends Model{
 ////        $ob->slug = "xa-hoi";
 ////        $ob->save();
 //    }
+    public function Post()
+    {
+        return $this->hasMany(Post::class,'category_id','id');
+    }
 
 
 }
