@@ -18,13 +18,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('homePage.homePage');
 });
-//Route::get('/about', function () {
-//    return view('about.about_us');
-//});
+Route::get('/category', function () {
+    return view('homePage.category');
+});
 //
 //Route::get('/contact', function () {
 //    return view('contact.contact_us');
 //});
+Route::post('admin/category/category','Admin\CategoryController@store');
 Route::get('admin/category/post','Admin\PostController@Post');
-Route::get('admin/category/test','Admin\CategoryController@test');
+Route::get('admin/category/getCategory','Admin\CategoryController@getCategory');
 

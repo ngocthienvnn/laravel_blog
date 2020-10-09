@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model{
     protected $table = 'categories';
     protected  $fillable = [
-        'title', 'description', 'slug','created_at','updated_at'
+        'title', 'description', 'slug'
     ];
 //    static function customGetRecord()
 //    {
@@ -16,12 +16,12 @@ class Category extends Model{
 //            'description' => 'Xin chao',
 //            'slug' => 'tin-tuc-3'
 //        ]);
-
-//        $ob = new self;
-//        $ob->title = "Xa HOi";
-//        $ob->description = "gioi thieu";
-//        $ob->slug = "xa-hoi";
-//        $ob->save();
+//
+////        $ob = new self;
+////        $ob->title = "Xa HOi";
+////        $ob->description = "gioi thieu";
+////        $ob->slug = "xa-hoi";
+////        $ob->save();
 //    }
 
 

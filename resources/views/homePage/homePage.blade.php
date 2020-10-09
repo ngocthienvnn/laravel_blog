@@ -2,8 +2,9 @@
 @section('content')
 <head>
 </head>
-<div class="homepage text">
-    home
-</div>
+    <div class="row">
+        <div id="title">
+        </div>
+    </div>
 @endsection
 
