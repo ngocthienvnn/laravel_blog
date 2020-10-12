@@ -7,19 +7,16 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 
 class CategoryController extends Controller
-
 {
+    public function categories()
+    {
+        return view('category.categories');
+    }
 
-    public function getCategory(Request $request)
+    public function getCategory()
     {
         $post = Category::all()->toArray();
         return $post;
-//       dd($post);
-
-       // update
-//        Category::where('id', 1)->update(['description' => '111', 'title' => '222']);
-        // delete
-//        Category::where('id', 1)->delete();
     }
     public function store(Request $request)
     {
